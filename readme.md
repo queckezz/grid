@@ -1,6 +1,10 @@
 
 ![logo for structs/grid][logo]
 
+[![latest github tag][github-img]][github-url]
+[![package manager][package-img]][package-url]
+[![license][license-img]][license-url]
+
 Simple responsive css grid based on [flexbox](http://www.w3.org/TR/css3-flexbox). Less than 6kb minfied.
 
 ## Installation
@@ -36,8 +40,8 @@ After you imported the grid you can customize the variables by using the `:root`
 
 Defines the spacing between the given grid cells.
 
-#### `flex-1of-{1..6}`
-Defines the grid scale.
+#### `flex-1of-{2..6}`
+Defines the grid scale. This should be generally **not** be modified
 
 #### `container-width`
 * Defaults to **64em**
@@ -46,7 +50,15 @@ Defines the `max-width` for the utility class `u-contain`.
 
 ## License
 
-[MIT][license]
+[MIT][license-url]
 
 [logo]: ./grid.png
-[license]: ./license
+
+[license-img]: http://img.shields.io/npm/l/koa-views.svg?style=flat-square
+[license-url]: ./license
+
+[github-img]: https://img.shields.io/github/tag/structs/grid.svg?style=flat-square
+[github-url]: https://github.com/structs/grid/tags
+
+[package-img]: http://img.shields.io/badge/package%20manager-duo-blue.svg?style=flat-square
+[package-url]: https://github.com/duojs/duo
