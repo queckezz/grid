@@ -1,15 +1,20 @@
 
-duo = ./node_modules/duo/bin/duo
+bin = ./node_modules/.bin/
 
 build:
-	@$(duo) \
+	@$(bin)duo \
 		--no-cache \
 		--use duo-myth \
 		--output test \
 		 lib/index.css
 
+check-size:
+	@$(bin)csso test/lib/index.css test/lib/out.css \
+		&& wc -c test/lib/out.css \
+		&& rm -rf test/lib/out.css
+
 watch:
-	@$(duo) \
+	@$(bin)duo \
 		--no-cache \
 		--use duo-myth \
 		--watch \
