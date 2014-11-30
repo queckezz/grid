@@ -1,0 +1,46 @@
+
+@custom-media --breakpoint-small (min-width: 40em);
+@custom-media --breakpoint-medium (min-width: 52em);
+@custom-media --breakpoint-large (min-width: 64em);
+
+/*
+ * Require some sort of `base`
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --gutter-y: 1em;
+  --gutter-x: 1em;
+
+  /**
+   * Grid scale
+   */
+
+  --flex-1of2: 50%;
+  --flex-1of3: calc(100% / 3);
+  --flex-1of4: 25%;
+  --flex-1of5: 20%;
+  --flex-1of6: calc(100% / 6);
+
+  /**
+   * Container width
+   */
+  
+  --container-width: 64em;
+}
+
+@import './grid.css';
+@import './s-grid.css';
+@import './m-grid.css';
+@import './l-grid.css';
+
+/**
+ * Utility class for a container
+ */
+
+.u-contain {
+  max-width: var(--container-width);
+}

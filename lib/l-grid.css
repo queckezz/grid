@@ -1,0 +1,53 @@
+
+/**
+ * Grid on large devices
+ */
+
+@media (--breakpoint-large) {
+
+  /**
+   * Expand grid from stacked to inline
+   */
+
+  .l-Grid--expand { flex-direction: row; }
+
+  /**
+   * Widths of individual grid cells
+   */
+
+  .l-Grid--1of2 > .Grid_cell { flex: 0 0 var(--flex-1of2); }
+  .l-Grid--1of3 > .Grid_cell { flex: 0 0 var(--flex-1of3); }
+  .l-Grid--1of4 > .Grid_cell { flex: 0 0 var(--flex-1of4); }
+  .l-Grid--1of5 > .Grid_cell { flex: 0 0 var(--flex-1of5); }
+  .l-Grid--1of6 > .Grid_cell { flex: 0 0 var(--flex-1of6); }
+
+  /**
+   * Gutter (spacing between grid cells)
+   */
+
+  .Grid--gutters.l-Grid--expand > .Grid_cell:not(:last-of-type) {
+    padding-right: var(--gutter-x);
+    padding-bottom: 0;
+  }
+
+  .Grid--gutters.l-Grid--1of2 > .Grid_cell:not(:nth-child(2n)),
+  .Grid--gutters.l-Grid--1of3 > .Grid_cell:not(:nth-child(3n)),
+  .Grid--gutters.l-Grid--1of4 > .Grid_cell:not(:nth-child(4n)),
+  .Grid--gutters.l-Grid--1of5 > .Grid_cell:not(:nth-child(5n)),
+  .Grid--gutters.l-Grid--1of6 > .Grid_cell:not(:nth-child(6n)) {
+    padding-right: var(--gutter-x);
+    padding-bottom: var(--gutter-y);
+  }
+
+  /**
+   * Reset paddings from previous viewport gutter sizes
+   */
+
+  .Grid--gutters.l-Grid--1of2 > .Grid_cell:nth-child(2n),
+  .Grid--gutters.l-Grid--1of3 > .Grid_cell:nth-child(3n),
+  .Grid--gutters.l-Grid--1of4 > .Grid_cell:nth-child(4n),
+  .Grid--gutters.l-Grid--1of5 > .Grid_cell:nth-child(5n),
+  .Grid--gutters.l-Grid--1of6 > .Grid_cell:nth-child(6n) {
+    padding: 0;
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "grid",
+  "private": true,
+  
+  "devDependencies": {
+    "duo": "^0.8.10",
+    "duo-myth": "0.0.4"
+  },
+
+  "license": "MIT"
+}

@@ -1,0 +1,53 @@
+
+/**
+ * Defines a new Grid.
+ */
+
+.Grid {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/**
+ * Distribute Cells evenly
+ */
+
+.Grid--distribute > .Grid_cell { flex: 1; }
+
+/**
+ * Control width manually
+ */
+
+.Grid_cell--full { flex: 1; }
+
+/**
+ * Position utlities
+ */
+
+.Grid--center   { align-items: center }
+.Grid--baseline { align-items: baseline }
+.Grid--stretch  { align-items: stretch }
+.Grid--start    { align-items: flex-start }
+.Grid--end      { align-items: flex-end }
+
+.Grid--main-start { justify-content: flex-start; }
+.Grid--main-end { justify-content: flex-end; }
+.Grid--main-center { justify-content: center; }
+.Grid--main-around  { justify-content: space-around }
+.Grid--main-between { justify-content: space-between }
+
+/*.Grid-cell--top {
+  align-self: flex-start;
+}
+
+.Grid-cell--bottom {
+  align-self: flex-end;
+}
+
+.Grid-cell--center {
+  align-self: center;
+}*/
+
+.Grid--gutters > .Grid_cell:not(:last-of-type) {
+  padding-bottom: var(--gutter-y);
+}
