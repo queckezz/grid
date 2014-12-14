@@ -1,15 +1,24 @@
 
+/**
+ * Define breakpoints
+ */
+
 @custom-media --breakpoint-small (min-width: 40em);
 @custom-media --breakpoint-medium (min-width: 52em);
 @custom-media --breakpoint-large (min-width: 64em);
 
-/*
- * Require some sort of `base`
+/**
+ * Better box model
  */
 
 * {
   box-sizing: border-box;
 }
+
+/**
+ * Declare global variables. These can be overidden by a
+ * following `:root` selector
+ */
 
 :root {
   --gutter-y: 1em;
@@ -17,6 +26,10 @@
 
   --container-width: 64em;
 }
+
+/**
+ * @component: Grid
+ */
 
 .Grid {
   display: flex;
@@ -30,6 +43,10 @@
   margin-bottom: -var(--gutter-y);
   margin-right: -var(--gutter-x);
 }
+
+/**
+ * Flex children positioning
+ */
 
 .Grid--start {
   justify-content: flex-start;
@@ -63,6 +80,10 @@
   align-items: flex-end;
 }
 
+/**
+ * Indivudual grid cell
+ */
+
 .Grid_cell {
   padding-right: var(--gutter-x);
   padding-bottom: var(--gutter-y);
@@ -76,16 +97,20 @@
   flex: 1;
 }
 
-@import './grid.css';
-@import './grid-small.css';
-@import './grid-medium.css';
-@import './grid-large.css';
-
 /**
- * Utility class for a container
- */
+* Utility class for a container
+*/
 
 .u-contain {
   max-width: var(--container-width);
   overflow: hidden;
 }
+
+/**
+ * Import
+ */
+
+@import './grid.css';
+@import './grid-small.css';
+@import './grid-medium.css';
+@import './grid-large.css';
