@@ -8,7 +8,7 @@ build:
 		--output test \
 		 lib/index.css
 
-check-size:
+size:
 	@$(bin)csso test/lib/index.css test/lib/out.css \
 		&& wc -c test/lib/out.css \
 		&& rm -rf test/lib/out.css

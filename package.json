@@ -1,6 +1,9 @@
 {
-  "name": "grid",
-  "private": true,
+  "name": "structs-grid",
+  "description": "Simple responsive css grid based on flexbox",
+  "repository": "https://github.com/structs/grid",
+  "version": "0.0.2",
+  "author": "Fabian Eichenberger",
   "devDependencies": {
     "csso": "^1.3.11",
     "duo": "^0.8.10",

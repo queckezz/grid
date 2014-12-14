@@ -5,7 +5,7 @@
 [![package manager][package-img]][package-url]
 [![license][license-img]][license-url]
 
-Simple responsive css grid based on [flexbox](http://www.w3.org/TR/css3-flexbox). Less than 6kb minfied.
+Simple responsive css grid based on [flexbox](http://www.w3.org/TR/css3-flexbox).
 
 ## Installation
 
@@ -13,6 +13,12 @@ Via [duo](https://github.com/duojs/duo):
 
 ```css
 @import 'structs/grid'
+```
+
+Via [npm](https://npmjs.com):
+
+```bash
+npm install structs-grid
 ```
 
 You need to make sure you use one of the following preprocessors in your duo build process to provide support for [css variables](http://dev.w3.org/csswg/css-variables/) and [custom media queries](http://dev.w3.org/csswg/mediaqueries-4/#custom-mq):
