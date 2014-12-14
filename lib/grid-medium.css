@@ -1,0 +1,54 @@
+
+/**
+ * @viewport: 0 to var(--breakpoint-medium)
+ */
+
+@media (--breakpoint-medium) {
+  .m-Grid--full > .Grid_cell {
+    flex: 1 0 100%;
+  }
+
+  .m-Grid--2 > .Grid_cell {
+    flex: 1 0 50%;
+  }
+
+  .m-Grid--3 > .Grid_cell {
+    flex: 1 0 calc(100% / 3);
+  }
+
+  .m-Grid--4 > .Grid_cell {
+    flex: 1 0 25%;
+  }
+
+  .m-Grid--5 > .Grid_cell {
+    flex: 1 0 20%;
+  }
+
+  .m-Grid--6 > .Grid_cell {
+    flex: 1 0 calc(100% / 6);
+  }
+
+  .m-Grid--7 > .Grid_cell {
+    flex: 1 0 calc(100% / 7);
+  }
+
+  .m-Grid--8 > .Grid_cell {
+    flex: 1 0 12.5%;
+  }
+
+  .m-Grid--9 > .Grid_cell {
+    flex: 1 0 calc(100% / 9)%;
+  }
+
+  .m-Grid--10 > .Grid_cell {
+    flex: 1 0 10%;
+  }
+
+  .m-Grid--11 > .Grid_cell {
+    flex: 1 0 calc(100% / 11);
+  }
+
+  .m-Grid--12 > .Grid_cell {
+    flex: 1 0 calc(100% / 12);
+  }
+}

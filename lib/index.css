@@ -15,27 +15,71 @@
   --gutter-y: 1em;
   --gutter-x: 1em;
 
-  /**
-   * Grid scale
-   */
-
-  --flex-1of2: 50%;
-  --flex-1of3: calc(100% / 3);
-  --flex-1of4: 25%;
-  --flex-1of5: 20%;
-  --flex-1of6: calc(100% / 6);
-
-  /**
-   * Container width
-   */
-  
   --container-width: 64em;
 }
 
+.Grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  /*
+   * This shifts the container over the excess padding
+   * created by .Grid_cell
+   */
+
+  margin-bottom: -var(--gutter-y);
+  margin-right: -var(--gutter-x);
+}
+
+.Grid--start {
+  justify-content: flex-start;
+}
+
+.Grid--center {
+  justify-content: center;
+}
+
+.Grid--around {
+  justify-content: space-around;
+}
+
+.Grid--between {
+  justify-content: space-between;
+}
+
+.Grid--end {
+  justify-content: flex-end;
+}
+
+.Grid--cross-start {
+  align-items: flex-start;
+}
+
+.Grid--cross-center {
+  align-items: center;
+}
+
+.Grid--cross-end {
+  align-items: flex-end;
+}
+
+.Grid_cell {
+  padding-right: var(--gutter-x);
+  padding-bottom: var(--gutter-y);
+}
+
+.Grid_cell--flex {
+  display: flex
+}
+
+.Grid_cell--auto {
+  flex: 1;
+}
+
 @import './grid.css';
-@import './s-grid.css';
-@import './m-grid.css';
-@import './l-grid.css';
+@import './grid-small.css';
+@import './grid-medium.css';
+@import './grid-large.css';
 
 /**
  * Utility class for a container
@@ -43,4 +87,5 @@
 
 .u-contain {
   max-width: var(--container-width);
+  overflow: hidden;
 }

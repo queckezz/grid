@@ -1,53 +1,52 @@
 
 /**
- * Defines a new Grid.
+ * @viewport: all devices
  */
 
-.Grid {
-  display: flex;
-  flex-flow: column wrap;
+.Grid--full > .Grid_cell {
+  flex: 1 0 100%;
 }
 
-/**
- * Distribute Cells evenly
- */
-
-.Grid--distribute > .Grid_cell { flex: 1; }
-
-/**
- * Control width manually
- */
-
-.Grid_cell--full { flex: 1; }
-
-/**
- * Position utlities
- */
-
-.Grid--center   { align-items: center }
-.Grid--baseline { align-items: baseline }
-.Grid--stretch  { align-items: stretch }
-.Grid--start    { align-items: flex-start }
-.Grid--end      { align-items: flex-end }
-
-.Grid--main-start { justify-content: flex-start; }
-.Grid--main-end { justify-content: flex-end; }
-.Grid--main-center { justify-content: center; }
-.Grid--main-around  { justify-content: space-around }
-.Grid--main-between { justify-content: space-between }
-
-/*.Grid-cell--top {
-  align-self: flex-start;
+.Grid--2 > .Grid_cell {
+  flex: 1 0 50%;
 }
 
-.Grid-cell--bottom {
-  align-self: flex-end;
+.Grid--3 > .Grid_cell {
+  flex: 1 0 calc(100% / 3);
 }
 
-.Grid-cell--center {
-  align-self: center;
-}*/
+.Grid--4 > .Grid_cell {
+  flex: 1 0 25%;
+}
 
-.Grid--gutters > .Grid_cell:not(:last-of-type) {
-  padding-bottom: var(--gutter-y);
+.Grid--5 > .Grid_cell {
+  flex: 1 0 20%;
+}
+
+.Grid--6 > .Grid_cell {
+  flex: 1 0 calc(100% / 6);
+}
+
+.Grid--7 > .Grid_cell {
+  flex: 1 0 calc(100% / 7);
+}
+
+.Grid--8 > .Grid_cell {
+  flex: 1 0 12.5%;
+}
+
+.Grid--9 > .Grid_cell {
+  flex: 1 0 calc(100% / 9)%;
+}
+
+.Grid--10 > .Grid_cell {
+  flex: 1 0 10%;
+}
+
+.Grid--11 > .Grid_cell {
+  flex: 1 0 calc(100% / 11);
+}
+
+.Grid--12 > .Grid_cell {
+  flex: 1 0 calc(100% / 12);
 }
