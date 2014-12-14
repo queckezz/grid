@@ -5,6 +5,7 @@
   "version": "0.0.3",
   "author": "Fabian Eichenberger",
   "main": "lib/index.css",
+  "style": "lib/index.css",
   "devDependencies": {
     "csso": "^1.3.11",
     "duo": "^0.8.10",
