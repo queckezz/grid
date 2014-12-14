@@ -1,0 +1,17 @@
+
+/**
+* @part: Grid_cell
+*/
+
+.Grid_cell {
+  padding-right: var(--gutter-x);
+  padding-bottom: var(--gutter-y);
+}
+
+.Grid_cell--flex {
+  display: flex
+}
+
+.Grid_cell--auto {
+  flex: 1;
+}

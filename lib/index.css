@@ -28,25 +28,25 @@
 }
 
 /**
- * @component: Grid
- */
+* @component: Grid
+*/
 
 .Grid {
   display: flex;
   flex-wrap: wrap;
 
   /*
-   * This shifts the container over the excess padding
-   * created by .Grid_cell
-   */
+  * This shifts the container over the excess padding
+  * created by .Grid_cell
+  */
 
   margin-bottom: -var(--gutter-y);
   margin-right: -var(--gutter-x);
 }
 
 /**
- * Flex children positioning
- */
+* Flex children positioning
+*/
 
 .Grid--start {
   justify-content: flex-start;
@@ -81,23 +81,6 @@
 }
 
 /**
- * Indivudual grid cell
- */
-
-.Grid_cell {
-  padding-right: var(--gutter-x);
-  padding-bottom: var(--gutter-y);
-}
-
-.Grid_cell--flex {
-  display: flex
-}
-
-.Grid_cell--auto {
-  flex: 1;
-}
-
-/**
 * Utility class for a container
 */
 
@@ -110,7 +93,8 @@
  * Import
  */
 
-@import './grid.css';
-@import './grid-small.css';
-@import './grid-medium.css';
-@import './grid-large.css';
+@import './cell.css';
+@import './all.css';
+@import './small.css';
+@import './medium.css';
+@import './large.css';
