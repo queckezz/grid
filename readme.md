@@ -46,9 +46,6 @@ After you imported the grid you can customize the variables by using the `:root`
 
 Defines the spacing between the given grid cells.
 
-#### `flex-1of-{2..6}`
-Defines the grid scale. This should be generally **not** be modified
-
 #### `container-width`
 * Defaults to **64em**
 
